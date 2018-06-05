@@ -1,0 +1,17 @@
+version: '3'
+networks:
+  deqlms:
+    driver: bridge
+services:
+  test1-prod:
+    image: "geoworks/test1-prod"
+    container_name: test1-prod
+    restart: always
+    labels:
+      org.label-schema.group: "deql-ms"
+    environment:
+      DEBUG: deql*
+    ports:
+     - "3333:8888"
+    networks:
+      - deqlms
