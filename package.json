@@ -8,7 +8,7 @@
     "build_testing_container":"docker build -f ./dockerfile.test --cache-from geoworks/test1 -t geoworks/test1 .",
     "run_testing_container":"docker run --rm geoworks/test1",
     "build_container":"docker build -f ./dockerfile --cache-from geoworks/test1-prod -t geoworks/test1-prod .",
-    "run_container":"docker stop geoworks/test1-prod && docker rm -f -v geoworks/test1-prod && docker-compose -f ./docker-compose.yml up -d"
+    "restart_container":"docker stop geoworks/test1-prod && docker rm -f -v geoworks/test1-prod && docker-compose -f ./docker-compose.yml up -d"
   },
   "repository": {
     "type": "git",
