@@ -1,0 +1,21 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "1\r 2\r 3\r 4\r 5\r 6\r 7",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/test.js",
+    "build_testing_container":"docker build -f ./dockerfile.test --cache-from geoworks/test1 -t geoworks/test1 .",
+    "run_testing_container":"docker run --rm geoworks/test1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAlexandr/test1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IAlexandr/test1/issues"
+  },
+  "homepage": "https://github.com/IAlexandr/test1#readme"
+}
