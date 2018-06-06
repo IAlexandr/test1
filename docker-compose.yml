@@ -11,7 +11,8 @@ services:
       org.label-schema.group: "deql-ms"
     environment:
       DEBUG: deql*
+      PORT: 5500
     ports:
-     - "3333:8888"
+     - "5555:5500"
     networks:
       - deqlms

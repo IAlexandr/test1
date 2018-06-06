@@ -12,6 +12,21 @@
             "type": "npm",
             "script": "run_testing_container",
             "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "build_container",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "restart_container",
+            "problemMatcher": []
         }
     ]
 }

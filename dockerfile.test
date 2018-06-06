@@ -4,6 +4,7 @@ ARG DIR=/home/test1
 ADD package.json $DIR/
 WORKDIR $DIR
 
+RUN npm install
 RUN npm install -g mocha
 
 COPY . $DIR
